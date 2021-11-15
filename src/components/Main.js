@@ -6,7 +6,7 @@ import Show from "../pages/Show";
 function Main(props) {
   const [cheese, setCheese] = useState(null);
 
-  const { URL } = process.env;
+  const URL = "http://cheeseapp-df.herokuapp.com/cheese/";
 
   const getCheese = async () => {
     const response = await fetch(URL);
