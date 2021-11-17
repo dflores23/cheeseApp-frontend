@@ -6,12 +6,13 @@ import Show from "../pages/Show";
 function Main(props) {
   const [cheese, setCheese] = useState(null);
 
-  const URL = "http://cheeseapp-df.herokuapp.com/cheese/";
+  const URL = "https://cheeseapp-df.herokuapp.com/cheese/";
 
   const getCheese = async () => {
     const response = await fetch(URL);
     const data = await response.json();
-    setCheese(data);
+    setChe
+    ese(data);
   };
 
   const createCheese = async (cheeses) => {
