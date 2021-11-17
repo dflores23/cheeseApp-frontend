@@ -24,7 +24,7 @@ function Main(props) {
       body: JSON.stringify(cheeses),
     });
     // update list of cheese
-    getCheese(data);
+    getCheese();
   };
 
 const updateCheese = async (cheeses, id)=> {
@@ -35,14 +35,14 @@ const updateCheese = async (cheeses, id)=> {
     },
     body: JSON.stringify(cheeses),
   })
-  getCheese(data)
+  getCheese()
 }
 
 const deleteCheese = async id => {
   await fetch(URL +id, {
     method: "delete",
   })
-  getCheese(data)
+  getCheese()
 }
 
   useEffect(() => getCheese(), []);
