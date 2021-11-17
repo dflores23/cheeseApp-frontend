@@ -9,7 +9,7 @@ function Main(props) {
   const URL = "http://cheeseapp-df.herokuapp.com/cheese/";
 
   const getCheese = async () => {
-    const response = await fetch(URL);
+    // const response = await fetch(URL);
     const data = await response.json();
     setCheese(data);
   };
